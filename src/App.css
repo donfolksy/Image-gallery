@@ -33,10 +33,10 @@ nav ul li {
   font-size: 30px;
   font-weight: 700;
 }
-.signin-body p{
-font-size: 18px;
-font-weight: 500;
-padding-top: 15px;
+.signin-body p {
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 15px;
 }
 .signin-body p input {
   width: 100%;
@@ -44,16 +44,15 @@ padding-top: 15px;
   padding-left: 10px;
   border-radius: 5px;
 }
-.signin h6{
-   font-size: 22px;
+.signin h6 {
+  font-size: 22px;
 }
-.signin button{
-   border: none;
-   border-radius: 5px;
-   padding: 5px 15px;
-   background-color:rgb(112, 112, 230) ;
-   color: white;
-   
+.signin button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  background-color: rgb(112, 112, 230);
+  color: white;
 }
 /* styling of the gallery */
 .gallery-content {
@@ -61,6 +60,7 @@ padding-top: 15px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 1rem;
 }
+
 .gallery-nav h2 {
   list-style: none;
   color: rgb(112, 112, 230);
@@ -84,10 +84,34 @@ padding-top: 15px;
 .gal-nav {
   border: 2px solid black;
   border-radius: 10px;
-  width: 40%;
+  /* width: 40%; */
 }
+.gal-nav-body {
+  width: 60%;
+}
+.gal-nav {
+  width: 50%;
+}
+
 .gal-nav input {
   border: none;
   outline: none;
   width: 100%;
 }
+
+@media screen and (max-width: 500px) {
+   .gallery-content {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-row-gap: 1rem;
+   }
+   .gallery-nav{
+      flex-direction: column;
+   }
+
+   .gal-nav-body {
+      width: 100%;
+    }
+ }
+
+ 

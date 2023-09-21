@@ -10,16 +10,18 @@ const GalleryNav = () => {
 	};
   return (
     <div className="container gallery-nav d-flex justify-content-between mt-3 mb-5">
-      <Link to="/">
+      <Link  to="/">
 
-        <h2>The Imaginarium Gallery</h2>
+        <h2>Gallery</h2>
       </Link>
+       <div className="d-flex gal-nav-body justify-content-between">
        <div className="gal-nav d-flex justify-content-between align-items-center p-2">
         <input value={searchQuery}
 								onChange={handleSearchChange} type="text" placeholder="Search"/> 
        <BiSearchAlt2/>
        </div>
        <button >Log out</button>
+       </div>
     </div>
   );
 };
