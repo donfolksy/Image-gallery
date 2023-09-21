@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.btn button {
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(112, 112, 230);
+  color: white;
+  font-size: 16px;
+}
+nav h5 {
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(112, 112, 230);
+}
+nav ul li {
+  list-style: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.signin {
+  background-image: url(/public/background.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+.signin h2 {
+  color: rgb(112, 112, 230);
+  font-size: 30px;
+  font-weight: 700;
+}
+.signin-body p{
+font-size: 18px;
+font-weight: 500;
+padding-top: 15px;
+}
+.signin-body p input {
+  width: 100%;
+  border: none;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+.signin h6{
+   font-size: 22px;
+}
+.signin button{
+   border: none;
+   border-radius: 5px;
+   padding: 5px 15px;
+   background-color:rgb(112, 112, 230) ;
+   color: white;
+   
+}
+/* styling of the gallery */
+.gallery-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 1rem;
+}
+.gallery-nav h2 {
+  list-style: none;
+  color: rgb(112, 112, 230);
+  text-decoration: none;
+}
+.gallery-nav button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  background-color: rgb(112, 112, 230);
+  color: white;
+}
+.gallery-img {
+  width: 50%;
+  padding-top: 10px;
+}
+.gallery-img img {
+  width: 100%;
+  height: 250px;
+}
+.gal-nav {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 40%;
+}
+.gal-nav input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
