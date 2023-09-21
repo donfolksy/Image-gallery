@@ -6,16 +6,20 @@ import {AiFillFacebook,AiOutlineInstagram,AiOutlineTwitter,AiFillYoutube,} from 
 
 const Homepage = () => {
   return (
-    <section className='herosection coontainer'>
+    <section className='herosection coontainer w-100'>
 
-<nav className="d-flex justify-content-between aling-item-center container pt-3">
-      <h5>The Imaginarium Gallery</h5>
-      <ul className="d-flex gap-5 ">
+<nav className="d-flex justify-content-between align-item-center container pt-3 ">
+      <h5 className='text-center'>The Imaginarium Gallery</h5>
+      <div>
+        <ul className="d-flex gap-2 gap-md-5 ">
         <li>Home</li>
         <li>Blog</li>
         <li>Portfolios</li>
         <li>Features</li>
       </ul>
+      </div>
+
+      
 <div className=" btn d-flex gap-3">
       <Link to="/signin"><button className="p-2">Login</button></Link>
       <Link to="/signup"><button className="p-2">Sign up</button></Link>
@@ -23,10 +27,10 @@ const Homepage = () => {
      </nav>
      <div className='container'>
 <h5 className="pt-5 pb-3 text-center">Enhance your visual journey with a captivating gallery experience that seamlessly arranges and showcases your images, creating an unparalleled artistic encounter.</h5>
-<div className=" container  ">
+<div className=" container hero-img d-flex gap-3  ">
 <img src={img} alt=""  />
 
-<img src={img2} alt="" className="ms-5 "/>
+<img src={img2} alt="" className=" "/>
 </div>
 <p className="pt-4 text-center">Enable effortless image sequencing in your art gallery through an intuitive Drag-and-Drop feature, allowing you to gracefully reposition your masterpieces at will.</p>
       </div>

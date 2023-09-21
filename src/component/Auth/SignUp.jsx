@@ -55,6 +55,7 @@ const SignUp = () => {
 
 // function App() {
 //   return (
+  <form onSubmit={signUp}>
     <MDBContainer fluid >
 
       <MDBCard className='text-black m-5' style={{borderRadius: '25px'}}>
@@ -66,10 +67,7 @@ const SignUp = () => {
           </Link>
               <p classNAme="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
 
-              <div className="d-flex flex-row align-items-center mb-4 ">
-                <MDBIcon fas icon="user me-3" size='lg'/>
-                <MDBInput label='Your Name' id='form1' type='text'  className='w-100'/>
-              </div>
+             
 
               <div className="d-flex flex-row align-items-center mb-4">
                 <MDBIcon fas icon="envelope me-3" size='lg'/>
@@ -97,6 +95,7 @@ const SignUp = () => {
       </MDBCard>
 
     </MDBContainer>
+    </form>
   );
 }
 
